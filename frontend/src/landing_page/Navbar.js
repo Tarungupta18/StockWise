@@ -9,13 +9,13 @@ export default function Navbar() {
       style={{ backgroundColor: "#FFF" }}
     >
       <div class="container p-2">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to={"/"}>
           <img
             src="media/images/logo.svg"
             style={{ width: "25%" }}
             alt="Logo"
           />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"

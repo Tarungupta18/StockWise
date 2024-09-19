@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   return (
@@ -29,29 +31,19 @@ export default function Navbar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Signup
-                </a>
+              <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  About
-                </a>
+                <Link class="nav-link active" aria-current="page" to="/about">About</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Product
-                </a>
+              <Link class="nav-link active" aria-current="page" to="/product">Product</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Pricing
-                </a>
+              <Link class="nav-link active" aria-current="page" to="/pricing">Pricing</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Support
-                </a>
+              <Link class="nav-link active" aria-current="page" to="/support">Support</Link>
               </li>
             </ul>
           </form>

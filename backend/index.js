@@ -1,4 +1,5 @@
-require('dotenv').config();
+require("dotenv").config();
+
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -8,7 +9,6 @@ const { HoldingsModel } = require("./model/HoldingsModel");
 
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
-
 
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
@@ -210,9 +210,8 @@ app.post("/newOrder", async (req, res) => {
   res.send("Order saved!");
 });
 
-
 app.listen(PORT, () => {
-    console.log("App started!");
-    mongoose.connect(uri);
-    console.log("DB connected!");
+  console.log("App started!");
+  mongoose.connect(uri);
+  console.log("DB started!");
 });
